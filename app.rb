@@ -1,6 +1,10 @@
 # Sinatra Basic Routes Lab
 require_relative 'config/environment'
 class App < Sinatra::Base
+  get '/' do
+    "Hello, World!"
+  end
+  
   get '/name' do
     "My name is _"
   end
@@ -10,7 +14,7 @@ class App < Sinatra::Base
   end 
   
   get '/favorite-song' do
-  "My favorite-song is Skyscraper by Demi Lovato."
+  "My favorite-song is __"
   end
 end
 
